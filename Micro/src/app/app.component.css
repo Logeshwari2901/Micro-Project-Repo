@@ -1,0 +1,99 @@
+.one{
+    text-align: center;
+    
+    height: 50px;
+
+}
+.btn1 {
+   
+    background: green;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+
+ 
+}
+.btn2 {
+   
+    background: #00c3ff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+
+   
+   
+}
+.btn3 {
+   
+    background: red;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+
+}
+.btn4 {
+   
+    background: orange;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+
+}
+.btn5 {
+   
+    background: royalblue;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+
+}
+
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+th{
+    background-color: aqua;
+}
+#z{
+    width: 100%;
+    padding-bottom: 30%px;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box{
+    width: 550px;
+    height: 350px;
+    padding: 40px;
+    position: relative;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    font-size:23px;
+    padding-top: 5%;
+}
+input{
+    width: 50%;
+    height: 20px;
+}

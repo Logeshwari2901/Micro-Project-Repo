@@ -1,0 +1,62 @@
+<div class="home">
+    <div class="one">
+    <h1>OD FORM </h1>
+</div>
+    <hr>
+    <br>
+    <br>
+    <form #myForm="ngForm" id="z">
+    <div class="box">
+    <label for="RegNo">Register Number</label>&nbsp;&nbsp;
+    <input type="text" name="RegNo" 
+                       id="Register "
+                       placeholder="enter register number"
+                       #RegNo="ngModel" ngModel
+                       pattern="[0-9]+" 
+                       required>
+    <br>
+    <br>
+    <label for="Name">Student Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="stuname" 
+                       id=" name" 
+                       placeholder="enter name"
+                       #stuname="ngModel" ngModel
+                       pattern="[a-z]+" 
+                       required>
+    <br>
+    <br>
+    <label for="Dept">Department</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="dept" id="dept " placeholder="enter dept" #dept="ngModel" ngModel pattern="[a-z]+" required>
+    <br>
+    <br>
+    <label for="Batch">Batch</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="Bat" id="dept " placeholder="enter batch"  #Bat="ngModel" ngModel pattern="[0-9]+" required>
+    <br>
+    <br><br>
+    <br>
+   
+     
+     <button type="button" class="btn1" (click)="insertStudent(myForm.value)">Insert</button>&nbsp;&nbsp;
+     <button type="button" class="btn2" (click)="updateStudent(myForm.value)">Update</button>&nbsp;&nbsp;
+     <button type="button" class="btn3" (click)="deleteStudent(myForm.value)">Delete</button>&nbsp;&nbsp;
+     <button type="button" class="btn4" (click)="applyStudent(myForm.value)">Apply</button>&nbsp;&nbsp;
+     <button type="button" class="btn5" (click)="statusStudent()">Status</button>
+     <br>
+     <br>
+     
+    </div>
+</form>
+   
+    
+</div>
+<h3>{{result}}</h3><br>
+<br>
+<div style="width: 100%;" *ngIf="Flag">
+    <table width="80%" align="center" class="table table-borderd">
+     <tr><th>Student RegNo</th><th>Student Name</th><th>Student Department</th><th>Student Batch</th></tr> 
+      <tr *ngFor="let stu of studentArr">
+          <td> {{stu.id}} </td><td> {{stu.stuname}} </td><td> {{stu.dept}} </td><td>{{stu.bat}}</td>
+      </tr>
+   </table>
+   </div>
+  

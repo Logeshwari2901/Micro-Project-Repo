@@ -1,0 +1,16 @@
+{
+  "student": [
+    {
+      "id": "731621205030",
+      "stuname": "Madhu",
+      "dept": "IT",
+      "bat": 2021
+    },
+    {
+      "id": "731621205001",
+      "stuname": "Hussain",
+      "dept": "IT",
+      "bat": "2021"
+    }
+  ]
+}
